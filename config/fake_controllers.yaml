@@ -1,0 +1,16 @@
+controller_list:
+  - name: fake_leg1_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - leg1_joint1
+      - leg1_joint2
+      - leg1_joint3
+  - name: fake_leg1_foot_controller
+    type: $(arg fake_execution_type)
+    joints:
+      []
+initial:  # Define initial robot poses per group
+#  - group: leg1
+#    pose: home
+
+  []

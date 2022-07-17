@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: millihexapod
+    relative_path: robot/millihex_description.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/millihex.srdf
+  CONFIG:
+    author_name: Christian Chan
+    author_email: chrischan2008@gmail.com
+    generated_timestamp: 1658085232

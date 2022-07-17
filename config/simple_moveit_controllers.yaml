@@ -1,0 +1,9 @@
+controller_list:
+  - name: leg1_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - leg1_joint1
+      - leg1_joint2
+      - leg1_joint3
