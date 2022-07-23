@@ -21,9 +21,6 @@
         <joint name="leg1_fixed_joint3"/>
         <joint name="leg1_fixed_joint4"/>
     </group>
-    <group name="leg1_foot">
-        <link name="leg1_joint_link4"/>
-    </group>
     <group name="leg2">
         <joint name="virtual_joint"/>
         <joint name="base_joint"/>
@@ -36,11 +33,18 @@
         <joint name="leg2_fixed_joint3"/>
         <joint name="leg2_fixed_joint4"/>
     </group>
-    <group name="leg2_foot">
-        <link name="leg2_joint_link4"/>
+    <group name="leg3">
+        <joint name="virtual_joint"/>
+        <joint name="base_joint"/>
+        <joint name="leg3_coxa_joint"/>
+        <joint name="leg3_joint1"/>
+        <joint name="leg3_fixed_joint1"/>
+        <joint name="leg3_joint2"/>
+        <joint name="leg3_fixed_joint2"/>
+        <joint name="leg3_joint3"/>
+        <joint name="leg3_fixed_joint3"/>
+        <joint name="leg3_fixed_joint4"/>
     </group>
-    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
-    <end_effector name="leg1_eef" parent_link="leg1_joint_link4" group="leg1_foot"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->

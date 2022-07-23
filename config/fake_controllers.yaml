@@ -5,20 +5,18 @@ controller_list:
       - leg1_joint1
       - leg1_joint2
       - leg1_joint3
-  - name: fake_leg1_foot_controller
-    type: $(arg fake_execution_type)
-    joints:
-      []
   - name: fake_leg2_controller
     type: $(arg fake_execution_type)
     joints:
       - leg2_joint1
       - leg2_joint2
       - leg2_joint3
-  - name: fake_leg2_foot_controller
+  - name: fake_leg3_controller
     type: $(arg fake_execution_type)
     joints:
-      []
+      - leg3_joint1
+      - leg3_joint2
+      - leg3_joint3
 initial:  # Define initial robot poses per group
 #  - group: leg1
 #    pose: home
