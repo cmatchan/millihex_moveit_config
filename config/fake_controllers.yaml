@@ -35,6 +35,27 @@ controller_list:
       - leg6_joint1
       - leg6_joint2
       - leg6_joint3
+  - name: fake_all_legs_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - leg1_joint1
+      - leg1_joint2
+      - leg1_joint3
+      - leg2_joint1
+      - leg2_joint2
+      - leg2_joint3
+      - leg3_joint1
+      - leg3_joint2
+      - leg3_joint3
+      - leg4_joint1
+      - leg4_joint2
+      - leg4_joint3
+      - leg5_joint1
+      - leg5_joint2
+      - leg5_joint3
+      - leg6_joint1
+      - leg6_joint2
+      - leg6_joint3
 initial:  # Define initial robot poses per group
 #  - group: leg1
 #    pose: home

@@ -81,6 +81,14 @@
         <joint name="leg6_fixed_joint3"/>
         <joint name="leg6_fixed_joint4"/>
     </group>
+    <group name="all_legs">
+        <group name="leg1"/>
+        <group name="leg2"/>
+        <group name="leg3"/>
+        <group name="leg4"/>
+        <group name="leg5"/>
+        <group name="leg6"/>
+    </group>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="virtual_joint" type="fixed" parent_frame="world" child_link="base_link"/>
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
